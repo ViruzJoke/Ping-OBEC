@@ -175,27 +175,22 @@ main {
 .slider-container {
     position: relative;
     width: 100%;
-    height: 400px;
     overflow: hidden;
 }
 
 .slides {
     display: flex;
-    width: 300%; /* 100% for each slide */
-    height: 100%;
     transition: transform 0.5s ease-in-out;
 }
 
 .slide {
-    width: 100%;
-    height: 100%;
     position: relative;
 }
 
 .slide img {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    height: auto;
+    display: block;
 }
 
 .slider-dots {
@@ -291,6 +286,7 @@ main {
     /* For line clamping */
     display: -webkit-box;
     -webkit-line-clamp: 2;
+    line-clamp: 2;
     -webkit-box-orient: vertical;  
     overflow: hidden;
 }
